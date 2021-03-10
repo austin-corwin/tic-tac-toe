@@ -1,0 +1,108 @@
+$grid-color: black;
+$dark: black;
+$light: white;
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    .header {
+        width: 100%;
+        text-align: center;
+        // display: none;
+        &__main {
+            text-transform: uppercase;
+        }
+    }
+    .container-players{
+        .row-players{
+            width: 100%;
+            height: 200px;
+            background-color: red;
+            display: flex;
+
+            .players{
+                margin: 10px;
+                background-color: $dark;
+                width: 100%;
+
+
+                .player-header{
+                    color: $light;
+                    text-align: center;
+                    
+                }
+                .player-score{
+                    color: $light;
+                    display: flex;
+                    height: 70%;
+                    justify-content: space-evenly;
+                    .score{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .container-grid {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .row-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 50%;
+            height: 400px;
+
+            .grid-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__value{
+                    color: red;
+                }
+
+                &__1{
+                    border-right: 3px solid $grid-color;
+                    border-bottom: 3px solid $grid-color;
+                }
+                &__2{
+                    border-right: 3px solid $grid-color;
+                    border-bottom: 3px solid $grid-color;
+                }
+                &__3{
+                    // border-right: 3px solid $grid-color;
+                    border-bottom: 3px solid $grid-color;
+                }
+                &__4{
+                    border-right: 3px solid $grid-color;
+                    border-bottom: 3px solid $grid-color;
+                }
+                &__5{
+                    border-right: 3px solid $grid-color;
+                    border-bottom: 3px solid $grid-color;
+                }
+                &__6{
+                    // border-right: 3px solid $grid-color;
+                    border-bottom: 3px solid $grid-color;
+                }
+                &__7{
+                    border-right: 3px solid $grid-color;
+                    // border-bottom: 3px solid $grid-color;
+                }
+                &__8{
+                    border-right: 3px solid $grid-color;
+                    // border-bottom: 3px solid $grid-color;
+                }
+            }
+        }
+    }
+}
